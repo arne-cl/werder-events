@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCal Event Viewer</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .sortable {
+            cursor: pointer;
+        }
+        .sortable:hover {
+            background-color: #e6e6e6;
+        }
+        .filter-input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+        }
+        .single-day {
+            background-color: #e6ffe6;
+        }
+        .multi-day {
+            background-color: #e6e6ff;
+        }
+        .recurring {
+            background-color: #ffe6e6;
+        }
+    </style>
+</head>
+<body>
+    <h1>iCal Event Viewer</h1>
+    <input type="file" id="fileInput" accept=".ics">
+    <table id="eventTable">
+        <thead>
+            <tr>
+                <th class="sortable" data-sort="summary">
+                    Summary
+                    <input type="text" class="filter-input" data-column="summary" placeholder="Filter summary...">
+                </th>
+                <th class="sortable" data-sort="start">
+                    Start Date
+                    <input type="text" class="filter-input" data-column="start" placeholder="Filter start date...">
+                </th>
+                <th class="sortable" data-sort="end">
+                    End Date
+                    <input type="text" class="filter-input" data-column="end" placeholder="Filter end date...">
+                </th>
+                <th>
+                    Location
+                    <input type="text" class="filter-input" data-column="location" placeholder="Filter location...">
+                </th>
+                <th>
+                    Description
+                    <input type="text" class="filter-input" data-column="description" placeholder="Filter description...">
+                </th>
+                <th>
+                    Type
+                    <input type="text" class="filter-input" data-column="type" placeholder="Filter type...">
+                </th>
+            </tr>
+        </thead>
+        <tbody id="eventBody"></tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.5.0/ical.min.js"></script>
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const eventBody = document.getElementById('eventBody');
+        const eventTable = document.getElementById('eventTable');
+
+        let events = [];
+        let filteredEvents = [];
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = (e) => {
+                const icalData = e.target.result;
+                const jcalData = ICAL.parse(icalData);
+                const comp = new ICAL.Component(jcalData);
+                events = comp.getAllSubcomponents('vevent').map(vevent => {
+                    const event = new ICAL.Event(vevent);
+                    const startDate = event.startDate.toJSDate();
+                    const endDate = event.endDate.toJSDate();
+                    let type;
+                    if (event.isRecurring()) {
+                        type = 'Recurring';
+                    } else if (isSameDay(startDate, endDate)) {
+                        type = 'Single Day';
+                    } else {
+                        type = 'Multi-Day';
+                    }
+                    return {
+                        summary: event.summary,
+                        start: startDate,
+                        end: endDate,
+                        location: event.location,
+                        description: event.description,
+                        type: type
+                    };
+                });
+                filteredEvents = [...events];
+                renderEvents();
+            };
+
+            reader.readAsText(file);
+        });
+
+        function formatDate(date) {
+            return date.toISOString().split('T')[0];
+        }
+
+        function isSameDay(d1, d2) {
+            return d1.getFullYear() === d2.getFullYear() &&
+                d1.getMonth() === d2.getMonth() &&
+                d1.getDate() === d2.getDate();
+        }
+
+        function renderEvents() {
+            eventBody.innerHTML = '';
+            filteredEvents.forEach(event => {
+                const row = document.createElement('tr');
+                row.classList.add(event.type.toLowerCase().replace(' ', '-'));
+                row.innerHTML = `
+                    <td>${event.summary}</td>
+                    <td>${formatDate(event.start)}</td>
+                    <td>${formatDate(event.end)}</td>
+                    <td>${event.location || ''}</td>
+                    <td>${event.description || ''}</td>
+                    <td>${event.type}</td>
+                `;
+                eventBody.appendChild(row);
+            });
+        }
+
+        eventTable.addEventListener('click', (e) => {
+            if (e.target.classList.contains('sortable')) {
+                const sortBy = e.target.dataset.sort;
+                filteredEvents.sort((a, b) => {
+                    if (a[sortBy] < b[sortBy]) return -1;
+                    if (a[sortBy] > b[sortBy]) return 1;
+                    return 0;
+                });
+                renderEvents();
+            }
+        });
+
+        document.querySelectorAll('.filter-input').forEach(input => {
+            input.addEventListener('input', () => {
+                const column = input.dataset.column;
+                const filterValue = input.value.toLowerCase();
+
+                filteredEvents = events.filter(event => {
+                    const value = event[column];
+                    if (typeof value === 'string') {
+                        return value.toLowerCase().includes(filterValue);
+                    } else if (value instanceof Date) {
+                        return formatDate(value).includes(filterValue);
+                    }
+                    return false;
+                });
+
+                renderEvents();
+            });
+        });
+    </script>
+</body>
+</html>
