@@ -1,4 +1,4 @@
-name: Daily iCal to SQLite Conversion
+name: Import Events from havelland-verteiler.de
 
 on:
   schedule:
