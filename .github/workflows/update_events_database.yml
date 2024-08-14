@@ -1,0 +1,58 @@
+name: Update Events Database
+
+on:
+  schedule:
+    - cron: '17 2 * * *'  # Runs at 02:17 UTC every day
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  update-sqlite-database:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install icalendar requests beautifulsoup4
+
+    - name: Scrape havelland-verteiler.de ical to sqlite
+      run: |
+        python havelland_verteiler_ical_to_sqlite.py --event-type-include "Single Day" "webcal://havelland-verteiler.de/?post_type=tribe_events&ical=1&eventDisplay=list" events.sqlite
+
+    - name: Scrape werder-havel.de events to sqlite
+      run: |
+        python werder_havel_de_to_sqlite.py https://www.werder-havel.de/tourismus/veranstaltungen/veranstaltungskalender.html events.sqlite -v
+
+    - name: Commit and push if changes
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add events.sqlite
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update events database"
+          git push
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Check for push errors
+      if: failure()
+      run: |
+        echo "Error occurred during push. Here's some debug information:"
+        git status
+        git remote -v
+        echo "GitHub Actor: ${{ github.actor }}"
+        echo "GitHub Ref: ${{ github.ref }}"
