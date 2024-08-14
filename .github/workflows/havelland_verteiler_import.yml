@@ -28,7 +28,7 @@ jobs:
 
     - name: Run iCal to SQLite conversion
       run: |
-        python ical_to_sqlite.py --event-type-include "Single Day" "webcal://havelland-verteiler.de/?post_type=tribe_events&ical=1&eventDisplay=list" events.sqlite
+        python havelland_verteiler_ical_to_sqlite.py --event-type-include "Single Day" "webcal://havelland-verteiler.de/?post_type=tribe_events&ical=1&eventDisplay=list" events.sqlite
 
     - name: Commit and push if changes
       run: |
