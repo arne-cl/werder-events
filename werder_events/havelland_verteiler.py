@@ -8,6 +8,9 @@ import argparse
 import hashlib
 import re
 
+from werder_events.utils import create_database
+
+
 def get_domain(url):
     parsed_url = urlparse(url)
     return parsed_url.netloc
@@ -75,24 +78,6 @@ def parse_ical(source, location_pattern=None, event_type_pattern=None):
     
     return events
 
-def create_database(db_path):
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS events (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        summary TEXT,
-        start_date TEXT,
-        end_date TEXT,
-        location TEXT,
-        description TEXT,
-        event_type TEXT,
-        source TEXT,
-        event_hash TEXT UNIQUE
-    )
-    ''')
-    conn.commit()
-    return conn
 
 def insert_events(conn, events):
     cursor = conn.cursor()

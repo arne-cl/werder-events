@@ -8,14 +8,9 @@ import hashlib
 from bs4 import BeautifulSoup
 import requests
 
-def setup_logger(verbose):
-    logger = logging.getLogger('werder_havel_scraper')
-    logger.setLevel(logging.DEBUG if verbose else logging.INFO)
-    handler = logging.StreamHandler()
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
-    return logger
+from werder_events.utils import create_database, setup_logger
+
+
 
 def parse_events(input_file, logger):
     logger.info(f"Parsing events from {input_file}")
@@ -64,26 +59,6 @@ def parse_events(input_file, logger):
     logger.info(f"Parsed {len(events)} events")
     return events
 
-def create_database(db_path, logger):
-    logger.info(f"Creating/connecting to database: {db_path}")
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS events (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        summary TEXT,
-        start_date TEXT,
-        end_date TEXT,
-        location TEXT,
-        description TEXT,
-        event_type TEXT,
-        source TEXT,
-        event_hash TEXT UNIQUE
-    )
-    ''')
-    conn.commit()
-    logger.debug("Database table 'events' created/verified")
-    return conn
 
 def insert_event(conn, event, logger):
     cursor = conn.cursor()
@@ -113,8 +88,9 @@ def insert_event(conn, event, logger):
     logger.debug(f"Event {'inserted' if inserted else 'already exists'}: {event['title']}")
     return inserted
 
+
 def main(input_file, output_db, verbose):
-    logger = setup_logger(verbose)
+    logger = setup_logger("werder-havel.de scraper", verbose)
     conn = None
     try:
         logger.info("Starting event extraction and database insertion")
@@ -149,6 +125,7 @@ def main(input_file, output_db, verbose):
     finally:
         if conn:
             conn.close()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Extract events from werder-havel.de and add to SQLite database.')

@@ -1,0 +1,4 @@
+requests
+icalendar
+#jinja2
+beautifulsoup4
