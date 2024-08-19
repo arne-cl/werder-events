@@ -29,7 +29,9 @@ def create_database(db_path, logger=None):
         description TEXT,
         event_type TEXT,
         source TEXT,
-        event_hash TEXT UNIQUE
+        event_hash TEXT UNIQUE,
+        is_reviewed BOOLEAN DEFAULT 0,
+        is_visible BOOLEAN DEFAULT 0
     )
     ''')
     conn.commit()

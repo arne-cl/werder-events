@@ -85,8 +85,8 @@ def insert_events(conn, events):
     for event in events:
         cursor.execute('''
         INSERT OR IGNORE INTO events 
-        (summary, start_date, end_date, location, description, event_type, source, event_hash)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        (summary, start_date, end_date, location, description, event_type, source, event_hash, is_reviewed, is_visible)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             event['summary'],
             event['start'],
@@ -95,7 +95,9 @@ def insert_events(conn, events):
             event['description'],
             event['type'],
             event['source'],
-            event['event_hash']
+            event['event_hash'],
+            False,
+            False
         ))
         if cursor.rowcount > 0:
             inserted_count += 1

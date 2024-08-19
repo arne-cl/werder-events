@@ -71,8 +71,8 @@ def insert_event(conn, event, logger):
     
     cursor.execute('''
     INSERT OR IGNORE INTO events 
-    (summary, start_date, end_date, location, description, event_type, source, event_hash)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    (summary, start_date, end_date, location, description, event_type, source, event_hash, is_reviewed, is_visible)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', (
         event['title'],
         start_date,
@@ -81,7 +81,9 @@ def insert_event(conn, event, logger):
         event.get('description', ''),
         event['type'],
         'werder-havel.de',
-        event_hash
+        event_hash,
+        False,
+        False
     ))
     inserted = cursor.rowcount > 0
     conn.commit()
