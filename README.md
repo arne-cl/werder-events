@@ -1,6 +1,7 @@
 # Werder Events
 
-This project aims to aggregate and list all events happening in Werder (Havel), Germany. It includes web scrapers for various event sources and tools to store the collected data in a SQLite database.
+This project aims to aggregate and list all events happening in Werder (Havel), Germany.
+It includes web scrapers for various event sources and tools to store the collected data in a SQLite database.
 
 ## Features
 
@@ -14,7 +15,7 @@ This project aims to aggregate and list all events happening in Werder (Havel), 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/werder-events.git
+   git clone https://github.com/arne-cl/werder-events.git
    cd werder-events
    ```
 
@@ -58,11 +59,3 @@ CREATE TABLE events (
 ## Automated Updates
 
 This project uses GitHub Actions to automatically update the events database daily. The workflow is defined in `.github/workflows/update_events_database.yml`.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[MIT License](LICENSE)
