@@ -43,16 +43,18 @@ python werder_events/havelland_verteiler.py --event-type-include "Single Day" "w
 The events are stored in a SQLite database with the following schema:
 
 ```sql
-CREATE TABLE events (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    summary TEXT,
-    start_date TEXT,
-    end_date TEXT,
-    location TEXT,
-    description TEXT,
-    event_type TEXT,
-    source TEXT,
-    event_hash TEXT UNIQUE
+CREATE TABLE IF NOT EXISTS events (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	summary TEXT,
+	start_date TEXT,
+	end_date TEXT,
+	location TEXT,
+	description TEXT,
+	event_type TEXT,
+	source TEXT,
+	event_hash TEXT UNIQUE,
+	is_reviewed BOOLEAN DEFAULT 0,
+	is_visible BOOLEAN DEFAULT 0
 )
 ```
 
