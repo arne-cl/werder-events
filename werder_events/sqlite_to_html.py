@@ -1,6 +1,7 @@
 import argparse
 import sqlite3
 import json
+import html
 from datetime import datetime, date
 
 def get_events_from_db(db_path):
@@ -46,7 +47,7 @@ def generate_html(events):
 
     # Prepare preview information for the first three events
     preview_events = events[:3]
-    preview_text = "\n".join([f"{event['summary']} - {event['start']} - {event['location']}" for event in preview_events])
+    preview_text = "\n".join([f"{html.escape(event['summary'])} - {event['start']} - {html.escape(event['location'] or '')}" for event in preview_events])
 
     html = f"""
 <!DOCTYPE html>
