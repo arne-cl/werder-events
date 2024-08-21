@@ -1,0 +1,407 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Havelland Verteiler - ECPv6.6.2//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Havelland Verteiler
+X-ORIGINAL-URL:https://havelland-verteiler.de
+X-WR-CALDESC:Veranstaltungen für Havelland Verteiler
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-Robots-Tag:noindex
+X-PUBLISHED-TTL:PT1H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:20240331T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:20241027T010000
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:20250330T010000
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:20251026T010000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240721T000000
+DTEND;TZID=Europe/Berlin:20240823T235959
+DTSTAMP:20240821T094901
+CREATED:20240704T102611Z
+LAST-MODIFIED:20240704T102611Z
+UID:10001124-1721520000-1724457599@havelland-verteiler.de
+SUMMARY:Reitferienlager 2024 als Wildnis-Pferde-Camp in Bad Belzig für Kinder und Jugendliche
+DESCRIPTION:Die Voranmeldung startet jetzt:\n1. RFL ausgebucht\n2. RFL 28.07. – 01.08.24 (noch 4 Plätze)\n3. RFL 06.08. – 10.08.24 (noch 2 Plätze)\n4. RFL 19.08. – 23.08.24 (noch 3 Plätze)\n\nWir sind in diesem Camp ganz in der Natur  und übernachten gleich neben der Pferdeweide im Zelt.\nBei uns sind Kinder und Jugendliche mit oder ohne Vorkenntnisse im Reiten oder im Umgang mit Pferden herzlich willkommen!\nFür Anfänger ist es die Chance\, einen ersten wunderbaren Kontakt mit den Tieren zu erleben und in ihrem eigenen Tempo das Reiten zu erlernen. Reiter mit Vorerfahrung können Erlerntes vertiefen und erweitern.\nWeitere Freizeitangebote sind z.B. baden gehen in einem tollen Freibad mit Rutsche\, Tischtennis spielen\,Lagerfeuer\, grillen und gemeinsame Spiele. Für die Kleinen ist auch ein Spielplatz in der Nähe.\n\nWeitere Informationen erhalten Sie auf der Webseite oder telefonisch.\n\nKontakt: Kathrin Beyer 0173 8097538 oder www.pferde-mensch-sein.de\n\n 
+URL:https://havelland-verteiler.de/event/reitferienlager-2024-als-wildnis-pferde-camp-in-bad-belzig-fuer-kinder-und-jugendliche/
+LOCATION:Bad Belzig
+CATEGORIES:Kleinanzeige,Sonstige,Veranstaltung
+ORGANIZER;CN="HPR/V und Reitunterricht Kathrin Beyer":MAILTO:pferdenaerrin-k.beyer@web.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240815T000000
+DTEND;TZID=Europe/Berlin:20240824T235959
+DTSTAMP:20240821T094901
+CREATED:20240729T074649Z
+LAST-MODIFIED:20240729T074649Z
+UID:10001521-1723680000-1724543999@havelland-verteiler.de
+SUMMARY:Ich habe ein Geräusch gesehen – Workshop
+DESCRIPTION:“Ich hab ein Geräusch gesehen!”\nVisualisierung von Sound\n\nWorkshop vom 15.  – 24.August 2024\n\nmit:\nFriedrich Andreoni Künstler\nHannes Brunner Professor für Bildhauerei und Projektkunst\nJan-Peter E.R. Sonntag Installations-Künstler\, Komponist und Theoretiker\n\nAssistenzen:\nAda Matthes Product Designerin Schwerpunkt: Sustainability\nKatya Quel Elizarova Künstlerin\n\nHast du Dich jemals gefragt\, wie Geräusche entstehen\, die später zu Musik werden – mit und ohne digitale Hilfsmittel?\nMöchtest du Dein eigenes Instrument bauen und entdecken\, wie du damit auf vielfältige Weise neue Klänge erzeugen kannst\, sei es durch Blasen\, Zupfen\, Streichen oder Wedeln?\n\nHast Du Lust\, zusammen mit anderen zu musizieren – vielleicht wie in einer Jazz-Bigband oder sogar in einem großen Orchester? experimentell künstlerisch Sounds zu erkunden und daraus ein Ensemble und eine Komposition zu entwickeln?\nDann bist Du in unserem Workshop “Ich hab ein Geräusch gesehen!” genau richtig!\n\nWorkshop-Termine: Vom 15. August bis zum großen Finale am 24. August bei den VulkanKunstWerken e.V. in der ehemaligen Vulkanfiberfabrik\, in Werder (Havel)\, Adolf-Damaschke-Straße 56\, 14542 Werder (Havel).\n\nWas erwartet dich?\nKlang- und Geräuschexperimente mit Bezügen zu Epochen und Erdteilen\nDrei internationale Künstler\, die dir zeigen\, wie du aus unterschiedlichen Volumen und Körpern faszinierende Geräusche erzeugen = hörbar machen kannst.\nEin gemeinsamer finaler Auftritt\, bei dem wir unsere Erfahrungen und neu gewonnenen Klänge zu einer einzigartigen Raum-Klang-Komposition vereinen\n\nDieser Workshop richtet sich an alle Interessierten im Alter von 10 bis 80 Jahren.\n\nAnmeldung: Melde dich per Telefon oder E-Mail an:\nE-Mail: vulkankunstwerke@posteo.de\nTelefon: 0170 825 40 33\n\nWir freuen uns auf Deine Teilnahme und darauf\, gemeinsam neue klangliche Welten zu entdecken!
+URL:https://havelland-verteiler.de/event/ich-habe-ein-geraeusch-gesehen-workshop/
+LOCATION:Atelier Vulkanfiberfabrik\, Adolf-Damaschke-Str. 56-58\, Werder (Havel)\, 14542
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/c2017d28-c980-1048-b748-0277b407a6cf-scaled.jpeg
+ORGANIZER;CN="Verein VulkanKunstWerke e.V.":MAILTO:vulkankunstwerke@posteo.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240819T140000
+DTEND;TZID=Europe/Berlin:20240823T150000
+DTSTAMP:20240821T094901
+CREATED:20240213T092746Z
+LAST-MODIFIED:20240213T092747Z
+UID:10000825-1724076000-1724425200@havelland-verteiler.de
+SUMMARY:Klima.Gerecht? Für alle!
+DESCRIPTION:Ein Mehrgenerationenseminar rund um Klimakrise & Gerechtigkeit (ab 16 Jahren)\n\nDie Klimakrise ist da und trifft uns alle. Aber sind wir alle gleich betroffen? Nein! Und tatsächlich sind diejenigen\, die am stärksten von der Klimakrise betroffen sind am wenigstens dafür verantwortlich. Lasst uns darüber ins Gespräch kommen\, neue Perspektiven kennenlernen & Verbindendes entdecken.\n\nDarum geht’s:\n\n 	Klimakrise & Kolonialismus: Die strukturellen Ursachen für globale Ungerechtigkeiten kennenlernen & bei einer Exkursion den Spuren der deutschen und preußischen Kolonialgeschichte und dem postkolonialen Schweigen im heutigen Potsdam nachgehen\n 	Klimagerechtigkeit: machtkritische\, rassismuskritische und diskriminierungssensible Lösungswege für die Klimakrise kennenlernen\n 	von anderen Menschen für eigene Handlungsmöglichkeiten inspirieren lassen und selbst aktiv werden\n\nDas erwartet euch:\n\n 	lecker vegetarisch-veganes Essen direkt an der sommerlichen Havel\n 	Austausch mit Menschen unterschiedlichen Alters\, Erfahrungen und Geschichten\n 	Exkursion nach Potsdam für einen Rundgang zur deutschen und preußischen Kolonialgeschichte\n 	ein Bildungshaus\, in dem ihr Nachhaltigkeit erleben könnt – von einem Lehmgebäude\, über Upcycling bis zur Photovoltaik-Anlage\n\nTeilnahmebeitrag:\n\n 	415\,00 €\, inkl. Teilnahmebeitrag\, Übernachtung im DZ\, Vollverpflegung\n 	ermäßigter Preis: 280 €\n 	bis 27 Jahre: 150 €\n 	EZ-Zuschlag: 80 €\n\nEure Trainer:innen\n\n 	Nene Opoku vom Black Earth Kollektiv\, Bildungsreferentin im Bereich Antisemitismus- und Rassismuskritik sowie Intersektionalität\, Rechtsextremismusprävention und Demokratieförderung\n 	Susanne Albani\, Jugendbildungsreferentin der Villa Fohrde und Leitung des Projekts „Wir gestalten Zukunft! Nachhaltig inklusiv gedacht“
+URL:https://havelland-verteiler.de/event/klima-gerecht-fuer-alle-2/
+LOCATION:Villa Fohrde e.V. Havelsee OT Fohrde\, August-Bebel-Straße 42\, Havelsee OT Fohrde\, 14798
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/png:https://havelland-verteiler.de/wp-content/uploads/2024/02/Bild-Portale-BU.png
+ORGANIZER;CN="Villa Fohrde e.V.":MAILTO:info@villa-fohrde.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240825T140000
+DTEND;TZID=Europe/Berlin:20240825T160000
+DTSTAMP:20240821T094901
+CREATED:20240527T131335Z
+LAST-MODIFIED:20240527T131335Z
+UID:10000963-1724594400-1724601600@havelland-verteiler.de
+SUMMARY:Die Gräber der Jäger – Bestattungsrituale der Vorgeschichte
+DESCRIPTION:Das älteste Gräberfeld Deutschlands liegt bei Groß Fredenwalde in der Uckermark. Erstmals hat hier eine Gruppe von steinzeitlichen Jäger-Sammlern an einem festen Ort ihre Toten begraben. Wie unterschieden sich die Gräber von dem\, was wir heute kennen? Und wie entwickelten sich die Grabsitten danach weiter?\n\nAusgehend von einem einzigartigen Fundplatz in Brandenburg taucht der Vortrag des Archäologen und Experten für Alt- und Mittelsteinzeit Andreas Kotula vom Brandenburgischen Landesamt für Denkmalpflege in die Grabbräuche unserer Vorfahren ein.
+URL:https://havelland-verteiler.de/event/die-graeber-der-jaeger-bestattungsrituale-der-vorgeschichte/
+CATEGORIES:Veranstaltung
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240826T090000
+DTEND;TZID=Europe/Berlin:20240826T150000
+DTSTAMP:20240821T094901
+CREATED:20240717T113310Z
+LAST-MODIFIED:20240717T113311Z
+UID:10001514-1724662800-1724684400@havelland-verteiler.de
+SUMMARY:Zirkus-Workshop-Woche "Wir sind Welt(en)-Gestalter*innen" für Kinder und Jugendliche 26.08.-30.08. 2024
+DESCRIPTION:KREATIV-WORKSHOP-PROGRAMM für KINDER und JUGENDLICHE\n\nin der PATENT-PAPIERFABRIK HOHENOFEN\n\n \n\n***************************************************************************\n\nWir sind Welt(en)- Gestalter*innen\n\nKreativität & Empowerment.\n\nDas Projekt lädt Kinder und Jugendliche (8-18 Jahre) aus der Region und darüber hinaus ein\, sich in den Bereichen Bildende Künste\, Darstellende Künste\, Medien und Handwerk auszuprobieren\, eigene Werke zu schaffen und gemeinsam ganze Welten entstehen zu lassen.\n\n**********************************************************************************\n\nZirkus-Workshop-Woche mit Workshops aus den Bereichen\n\nLuftakrobatik\n\nJonglage\n\nMusik\n\nBühnen- und Kostümbild\n\nPlakatkunst\n\n \n\n26.-30.08.2024\n\njeweils 9-15Uhr\n\n \n\nDie Teilnahme ist kostenlos.\n\nMaterial und Mittagessen inklusive.\n\n \n\nBegrenzte Teilnahmeplätze\,\n\nbitte anmelden!\n\n \n\nAnmeldung unter:\n\nart.31@papierfabrik-hohenofen.de\n\n \n\n \n\nMehr Infos unter:\n\nwww.papierfabrik-hohenofen.de\n\n \n\n***************************************************************************
+URL:https://havelland-verteiler.de/event/zirkus-workshop-woche-wir-sind-welten-gestalterinnen-fuer-kinder-und-jugendliche-26-08-30-08-2024/2024-08-26/
+LOCATION:Patent-Papierfabrik Hohenofen\, Neustädter Str. 25\, Sieversdorf-Hohenofen OT Hohenofen\, 16845
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/Zirkus-Workshop_Woche_PPH_26.-30.08.2024-scaled.jpg
+ORGANIZER;CN="Patent-Papierfabrik Hohenofen e.V.":MAILTO:kultur@papierfabrik-hohenofen.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240827T090000
+DTEND;TZID=Europe/Berlin:20240827T150000
+DTSTAMP:20240821T094901
+CREATED:20240717T113310Z
+LAST-MODIFIED:20240717T113311Z
+UID:10001515-1724749200-1724770800@havelland-verteiler.de
+SUMMARY:Zirkus-Workshop-Woche "Wir sind Welt(en)-Gestalter*innen" für Kinder und Jugendliche 26.08.-30.08. 2024
+DESCRIPTION:KREATIV-WORKSHOP-PROGRAMM für KINDER und JUGENDLICHE\n\nin der PATENT-PAPIERFABRIK HOHENOFEN\n\n \n\n***************************************************************************\n\nWir sind Welt(en)- Gestalter*innen\n\nKreativität & Empowerment.\n\nDas Projekt lädt Kinder und Jugendliche (8-18 Jahre) aus der Region und darüber hinaus ein\, sich in den Bereichen Bildende Künste\, Darstellende Künste\, Medien und Handwerk auszuprobieren\, eigene Werke zu schaffen und gemeinsam ganze Welten entstehen zu lassen.\n\n**********************************************************************************\n\nZirkus-Workshop-Woche mit Workshops aus den Bereichen\n\nLuftakrobatik\n\nJonglage\n\nMusik\n\nBühnen- und Kostümbild\n\nPlakatkunst\n\n \n\n26.-30.08.2024\n\njeweils 9-15Uhr\n\n \n\nDie Teilnahme ist kostenlos.\n\nMaterial und Mittagessen inklusive.\n\n \n\nBegrenzte Teilnahmeplätze\,\n\nbitte anmelden!\n\n \n\nAnmeldung unter:\n\nart.31@papierfabrik-hohenofen.de\n\n \n\n \n\nMehr Infos unter:\n\nwww.papierfabrik-hohenofen.de\n\n \n\n***************************************************************************
+URL:https://havelland-verteiler.de/event/zirkus-workshop-woche-wir-sind-welten-gestalterinnen-fuer-kinder-und-jugendliche-26-08-30-08-2024/2024-08-27/
+LOCATION:Patent-Papierfabrik Hohenofen\, Neustädter Str. 25\, Sieversdorf-Hohenofen OT Hohenofen\, 16845
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/Zirkus-Workshop_Woche_PPH_26.-30.08.2024-scaled.jpg
+ORGANIZER;CN="Patent-Papierfabrik Hohenofen e.V.":MAILTO:kultur@papierfabrik-hohenofen.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240828T090000
+DTEND;TZID=Europe/Berlin:20240828T150000
+DTSTAMP:20240821T094901
+CREATED:20240717T113310Z
+LAST-MODIFIED:20240717T113311Z
+UID:10001516-1724835600-1724857200@havelland-verteiler.de
+SUMMARY:Zirkus-Workshop-Woche "Wir sind Welt(en)-Gestalter*innen" für Kinder und Jugendliche 26.08.-30.08. 2024
+DESCRIPTION:KREATIV-WORKSHOP-PROGRAMM für KINDER und JUGENDLICHE\n\nin der PATENT-PAPIERFABRIK HOHENOFEN\n\n \n\n***************************************************************************\n\nWir sind Welt(en)- Gestalter*innen\n\nKreativität & Empowerment.\n\nDas Projekt lädt Kinder und Jugendliche (8-18 Jahre) aus der Region und darüber hinaus ein\, sich in den Bereichen Bildende Künste\, Darstellende Künste\, Medien und Handwerk auszuprobieren\, eigene Werke zu schaffen und gemeinsam ganze Welten entstehen zu lassen.\n\n**********************************************************************************\n\nZirkus-Workshop-Woche mit Workshops aus den Bereichen\n\nLuftakrobatik\n\nJonglage\n\nMusik\n\nBühnen- und Kostümbild\n\nPlakatkunst\n\n \n\n26.-30.08.2024\n\njeweils 9-15Uhr\n\n \n\nDie Teilnahme ist kostenlos.\n\nMaterial und Mittagessen inklusive.\n\n \n\nBegrenzte Teilnahmeplätze\,\n\nbitte anmelden!\n\n \n\nAnmeldung unter:\n\nart.31@papierfabrik-hohenofen.de\n\n \n\n \n\nMehr Infos unter:\n\nwww.papierfabrik-hohenofen.de\n\n \n\n***************************************************************************
+URL:https://havelland-verteiler.de/event/zirkus-workshop-woche-wir-sind-welten-gestalterinnen-fuer-kinder-und-jugendliche-26-08-30-08-2024/2024-08-28/
+LOCATION:Patent-Papierfabrik Hohenofen\, Neustädter Str. 25\, Sieversdorf-Hohenofen OT Hohenofen\, 16845
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/Zirkus-Workshop_Woche_PPH_26.-30.08.2024-scaled.jpg
+ORGANIZER;CN="Patent-Papierfabrik Hohenofen e.V.":MAILTO:kultur@papierfabrik-hohenofen.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240829T090000
+DTEND;TZID=Europe/Berlin:20240829T150000
+DTSTAMP:20240821T094901
+CREATED:20240717T113310Z
+LAST-MODIFIED:20240717T113311Z
+UID:10001517-1724922000-1724943600@havelland-verteiler.de
+SUMMARY:Zirkus-Workshop-Woche "Wir sind Welt(en)-Gestalter*innen" für Kinder und Jugendliche 26.08.-30.08. 2024
+DESCRIPTION:KREATIV-WORKSHOP-PROGRAMM für KINDER und JUGENDLICHE\n\nin der PATENT-PAPIERFABRIK HOHENOFEN\n\n \n\n***************************************************************************\n\nWir sind Welt(en)- Gestalter*innen\n\nKreativität & Empowerment.\n\nDas Projekt lädt Kinder und Jugendliche (8-18 Jahre) aus der Region und darüber hinaus ein\, sich in den Bereichen Bildende Künste\, Darstellende Künste\, Medien und Handwerk auszuprobieren\, eigene Werke zu schaffen und gemeinsam ganze Welten entstehen zu lassen.\n\n**********************************************************************************\n\nZirkus-Workshop-Woche mit Workshops aus den Bereichen\n\nLuftakrobatik\n\nJonglage\n\nMusik\n\nBühnen- und Kostümbild\n\nPlakatkunst\n\n \n\n26.-30.08.2024\n\njeweils 9-15Uhr\n\n \n\nDie Teilnahme ist kostenlos.\n\nMaterial und Mittagessen inklusive.\n\n \n\nBegrenzte Teilnahmeplätze\,\n\nbitte anmelden!\n\n \n\nAnmeldung unter:\n\nart.31@papierfabrik-hohenofen.de\n\n \n\n \n\nMehr Infos unter:\n\nwww.papierfabrik-hohenofen.de\n\n \n\n***************************************************************************
+URL:https://havelland-verteiler.de/event/zirkus-workshop-woche-wir-sind-welten-gestalterinnen-fuer-kinder-und-jugendliche-26-08-30-08-2024/2024-08-29/
+LOCATION:Patent-Papierfabrik Hohenofen\, Neustädter Str. 25\, Sieversdorf-Hohenofen OT Hohenofen\, 16845
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/Zirkus-Workshop_Woche_PPH_26.-30.08.2024-scaled.jpg
+ORGANIZER;CN="Patent-Papierfabrik Hohenofen e.V.":MAILTO:kultur@papierfabrik-hohenofen.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240830T000000
+DTEND;TZID=Europe/Berlin:20240901T235959
+DTSTAMP:20240821T094901
+CREATED:20240717T113326Z
+LAST-MODIFIED:20240717T113326Z
+UID:10001513-1724976000-1725235199@havelland-verteiler.de
+SUMMARY:ZIRKUS(S)machmitFESTIVAL: Zirkus/ Theater/ Musik/ Feuerspektakel/ Workshops/ Spielen/ Film/ Kunst/ Austausch am 30.08.-01.09.2024 in der Patent-Papierfabrik Hohenofen
+DESCRIPTION:Die Patent Papierfabrik und cia. zirkuss laden euch zu einem spektakulären magischen Wochenende für Klein und Groß voller Zirkus/ Theater/ Musik/ Feuerspektakel/ Workshops/ Spielen/ Film/ Kunst/ Austausch/ leckerem Essen/ Überraschungen und gemeinsamer Zeit ein!\n\n***\n\nauführliches Programm hier\n\n \n\nPreise\n\nFestivalticket für alle Tage (Fr\, Sa & So): 40 €\n\nFestivalticket für alle Tage Kids-Preis (4-18 Jahre): 20 €\n\nFreitag Tagesticket: 15 € Kids-Preis (4-18 Jahre): 8 €\n\nSamstag Tagesticket: 20 € Kids-Preis (4-18 Jahre): 12 €\n\nSonntag Tagesticket: 15 € Kids-Preis (4-18 Jahre): 8 €\n\nTickets sind per Barzahlung direkt vor Ort an der Kasse zu erwerben.\n\n \n\nMitbringen\n\nWir empfehlen allen Gästen mitzubringen: Picknickdecke(n)\, eigene Textilien zum Bedrucken\, Yoga-Matte\n\n \n\nCode of Conduct\n\nAls Festival treten wir für eine vielfältige\, tolerante und offene Gesellschaft ein.\n\nDaher lehnen wir jegliche Form von Diskriminierung\, darunter Rassismus\, Antisemitismus\, Islamfeindlichkeit\, Antiziganismus\, Ableismus\, Sexismus\, Queerfeindlichkeit und vergleichbare Äußerungen und Handlungen ab.\n\nMenschenfeindliche Werte\, Weltbilder und Haltungen haben auf unserem Festival keinen Platz. Das Festival verstehen wir als einen Ort der Diversität\, einer Kultur und Atmosphäre des gegenseitigen Respekts\, Toleranz und der Akzeptanz im Sinne eines solidarischen Miteinanders.\n\nWir möchten eine schöne und sichere Atmosphäre für alle schaffen. Es wird ein Awareness-Team geben\, an das ihr euch wenden könnt\, solltet ihr euch unwohl fühlen.\n\n \n\nAnfahrt\n\nSiehe https://papierfabrik-hohenofen.de/kontakt/\n\nBarrierefreiheit\n\nsiehe https://papierfabrik-hohenofen.de/barrierefreiheit/
+URL:https://havelland-verteiler.de/event/zirkussmachmitfestival-zirkus-theater-musik-feuerspektakel-workshops-spielen-film-kunst-austausch-am-30-08-01-09-2024-in-der-patent-papierfabrik-hohenofen/
+LOCATION:Patent-Papierfabrik Hohenofen\, Neustädter Str. 25\, Sieversdorf-Hohenofen OT Hohenofen\, 16845
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/ZIRKUSSmachmitFESTIVAL_FLyer_2-scaled.jpg
+ORGANIZER;CN="Patent-Papierfabrik Hohenofen e.V.":MAILTO:kultur@papierfabrik-hohenofen.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240830T090000
+DTEND;TZID=Europe/Berlin:20240830T150000
+DTSTAMP:20240821T094901
+CREATED:20240717T113310Z
+LAST-MODIFIED:20240717T113311Z
+UID:10001518-1725008400-1725030000@havelland-verteiler.de
+SUMMARY:Zirkus-Workshop-Woche "Wir sind Welt(en)-Gestalter*innen" für Kinder und Jugendliche 26.08.-30.08. 2024
+DESCRIPTION:KREATIV-WORKSHOP-PROGRAMM für KINDER und JUGENDLICHE\n\nin der PATENT-PAPIERFABRIK HOHENOFEN\n\n \n\n***************************************************************************\n\nWir sind Welt(en)- Gestalter*innen\n\nKreativität & Empowerment.\n\nDas Projekt lädt Kinder und Jugendliche (8-18 Jahre) aus der Region und darüber hinaus ein\, sich in den Bereichen Bildende Künste\, Darstellende Künste\, Medien und Handwerk auszuprobieren\, eigene Werke zu schaffen und gemeinsam ganze Welten entstehen zu lassen.\n\n**********************************************************************************\n\nZirkus-Workshop-Woche mit Workshops aus den Bereichen\n\nLuftakrobatik\n\nJonglage\n\nMusik\n\nBühnen- und Kostümbild\n\nPlakatkunst\n\n \n\n26.-30.08.2024\n\njeweils 9-15Uhr\n\n \n\nDie Teilnahme ist kostenlos.\n\nMaterial und Mittagessen inklusive.\n\n \n\nBegrenzte Teilnahmeplätze\,\n\nbitte anmelden!\n\n \n\nAnmeldung unter:\n\nart.31@papierfabrik-hohenofen.de\n\n \n\n \n\nMehr Infos unter:\n\nwww.papierfabrik-hohenofen.de\n\n \n\n***************************************************************************
+URL:https://havelland-verteiler.de/event/zirkus-workshop-woche-wir-sind-welten-gestalterinnen-fuer-kinder-und-jugendliche-26-08-30-08-2024/2024-08-30/
+LOCATION:Patent-Papierfabrik Hohenofen\, Neustädter Str. 25\, Sieversdorf-Hohenofen OT Hohenofen\, 16845
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/Zirkus-Workshop_Woche_PPH_26.-30.08.2024-scaled.jpg
+ORGANIZER;CN="Patent-Papierfabrik Hohenofen e.V.":MAILTO:kultur@papierfabrik-hohenofen.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240831T140000
+DTEND;TZID=Europe/Berlin:20240831T170000
+DTSTAMP:20240821T094901
+CREATED:20240527T131318Z
+LAST-MODIFIED:20240527T131318Z
+UID:10000964-1725112800-1725123600@havelland-verteiler.de
+SUMMARY:Pilze selbst anbauen
+DESCRIPTION:Möchtest du selbst Speisepilze anbauen\, statt sie im Wald zu suchen? In diesem Workshop lernst du\, wie du das mit einfachen Mitteln zu Hause umsetzen kannst. Gemeinsam stellen wir eine Reinkultur und Pilzbrut her und beimpfen das endgültige Substrat. Am Ende kannst du deine eigene kleine Pilzkultur mit nach Hause nehmen.\n\nAußerdem gestalten wir gemeinsam ein Pilzbeet mit Holzhäckseln oder Stroh im Garten.\n\nEin Workshop für Interessierte mit und ohne Vorkenntnissen.\n\nDer Workshop wird geleitet von der Biologin Dr. Sylvia Hutter. Sie hat sich neben der Permakultur und der Veröffentlichung verschiedener Sachbücher vor allem auf Pilze spezialisiert\, ist Pilzsachverständige\, PilzCoach und hat über Waldpilzgemeinschaften promoviert.
+URL:https://havelland-verteiler.de/event/pilze-selbst-anbauen/
+LOCATION:Landschafts- und Kunstverein Rietzer Berg\, Rietzer Siedlung 11\, Kloster Lehnin\, OT Rietz\, 14797
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Landschafts- und Kunstverein Rietzer Berg":MAILTO:info@rietzerberg.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240831T180000
+DTEND;TZID=Europe/Berlin:20240831T220000
+DTSTAMP:20240821T094901
+CREATED:20240729T074624Z
+LAST-MODIFIED:20240729T074625Z
+UID:10001520-1725127200-1725141600@havelland-verteiler.de
+SUMMARY:Kunst trifft Chormusik: Im heißen Hauch\, mondsilbergrün
+DESCRIPTION:Ein Sommerabend in der Vulkanfiberfabrik mit Malerei\, Installation und Liedern von Leonhard Lechner\, Giovanni Gastoldi\,\nFelix Mendelssohn Bartholdy\, Hugo Distler\, Gerhard Schwarz u.a.\n\nUnter Mitwirkung von:\nChor “Freiklang” (Rangsdorf)\nAdele van Heerden (Kapstadt)\nKatharina Forster (Werder)\nIris Ulbricht (Rangsdorf)\n\nDer Rangsdorfer Chor Freiklang besteht seit 2007. Das Repertoire umfasst alte wie neuere geistliche und weltliche a-capella-Chormusik.\n\nAdele van Heerden widmet sich dem Thema Körper und Wasser in Malerei und Fotografie.\nKatharina Forsters Skulpturen und Objekte thematisieren gesellschafts- und umweltpolitische Fragestellungen.\nIris Ulbricht hat sich der klassischen Malerei verschrieben. Sie ist Anachronistin aus Leidenschaft.\n\nSamstag\, 31.8.2024\, 18:00\nAtelier Vulkanfiberfabrik\, Werder (Havel)\n\nFür kühle Getränke und kleine Speisen ist gesorgt\nEintritt: frei
+URL:https://havelland-verteiler.de/event/kunst-trifft-chormusik-im-heissen-hauch-mondsilbergruen/
+LOCATION:Atelier Vulkanfiberfabrik\, Adolf-Damaschke-Str. 56-58\, Werder (Havel)\, 14542
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/69324cf6-959e-fe62-3ac5-581d15bc7aac.jpeg
+ORGANIZER;CN="Atelier Vulkanfiberfabrik":MAILTO:Atelier Vulkanfiberfabrik &lt;ateliervulkanfiberfabrik@gmail.com&gt;
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240903T191500
+DTEND;TZID=Europe/Berlin:20240903T213000
+DTSTAMP:20240821T094901
+CREATED:20240705T123030Z
+LAST-MODIFIED:20240705T123030Z
+UID:10001133-1725390900-1725399000@havelland-verteiler.de
+SUMMARY:WILD MOON – Frauenkreis zum Neumond – Reise in die zweite Hälfte des Jahres
+DESCRIPTION:Es geht um nichts geringeres als die Verankerung von Urvertrauen und Deines wahren Selbstwerts!\nLadies\, dieser Kreis ist für Dich\, wenn Du Lust hast auf Leben im Fluss\, auf Selbstermächtigung\, inneres Wachstum\, Präsenz und Deine eigene Weiblichkeit.\n\nIn diesem offenen Frauenkreis\, wandern wir durch den Jahreskreis\, durch innere und äußere Landschaften\, wir nähren uns im wertschätzenden Miteinander\, erwecken unser Körperglück und erinnern unsere Essenz.\n\nFür Frauen*\, die aus Überforderung\, Mangelgefühl und Stagnation aussteigen wollen\, um das Leben und sich Selbst zu entdecken\, zu bewegen und zu feiern!\n\nWir erobern die Kraft der verschiedenen Yin-Qualitäten!\n\nDafür verlernen wir kulturelle Konditionierungen\, die uns nicht mehr dienen\, und forschen\, was für Kräfte daraus erwachen. Dies ist der Kreis für die Löwin und Bärin in Dir\, für Deine innere Kriegerin\, Königin und Magierin\, für unsere Intuition und unsere Verletzlichkeit!\nHier findest Du Raum\, um Dir Aufmerksamkeit zu schenken\, Raum\, um die Weisheit der Zyklen des Lebens\, in Dir selbst und um Dich herum\, zu erspüren\, zu erforschen und zu teilen!\n\nWir starten mit einer Schüttelreise/Schüttelmeditation und einem Austauschkreis und entfachen dabei den Zauber jedes Kreises. Durch spüren\, zuhören\, abtauchen\, atmen\, berühren und wieder ganz auftauchen mit verschiedenen Embodiment-Tools und Deinem Funken webt sich stets ein magischer Teppich.\nDiese Welt braucht uns ganz dringend verkörpert und verbunden – angeschlossen an den wilden\, weisen Fluss des Lebens!\nMEHR DENN JE: LUST auf\nLeben im Fluss\,\nSelbstermächtigung\,\n\nVerkörperung\,\nWeiblichkeit\,\nLust?\n\n3. September 2024 – zur Dunkelmondin – wir integrieren die Intensität und Fülle des Sommers und tauchen ein in einen neuen Zyklus\, in die zweite Hälfte des Jahres…\n\nLasst uns uns gemeinsam ausrichten und ausdehnen\, in Hingabe an das Leben! \n19:15 – 21:15 Uhr – Potsdam-Innenstadt \nWertschätzung für den Kreis: 25-35 €
+URL:https://havelland-verteiler.de/event/wild-moon-frauenkreis-zum-neumond-reise-in-die-zweite-haelfte-des-jahres/
+LOCATION:Gute11 Praxisgemeinschaft\, Gutenbergstraße 11\, Potsdam\, 14467
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/Wild-Womb-Retreat-8-Luna-Buerger-Photography-5724.jpg
+ORGANIZER;CN="Nadine Neuner - Therapie und Frauenarbeit":MAILTO:nadine@wildwiseflow.com
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240913T100000
+DTEND;TZID=Europe/Berlin:20240915T150000
+DTSTAMP:20240821T094901
+CREATED:20240705T123138Z
+LAST-MODIFIED:20240705T123138Z
+UID:10001131-1726221600-1726412400@havelland-verteiler.de
+SUMMARY:RAW magic - Erdung und Urkraft - ein Retreat für Frauen*
+DESCRIPTION:RAW MAGIC – Erdung und Urkraft\n– Ein Retreat für Frauen –\nWir laden dich ein\, mit uns nach Brandenburg zu kommen. Ein ganzes Wochenende in der Natur\, voller Frauenpower\, Ritualen\, Embodiment und Gemeinschaft.\n\nWir widmen dieses Wochenende ganz der Kraft von unten – unserer Erdverbundenheit!\nIm Kontakt mit der Erde\, Mama Gaia\, dem Boden spüren wir Sicherheit\, gehalten und genährt sein. Wir spüren eine satte Intensität\, eine kompromisslose Lebendigkeit\, eine rohe Schönheit\, die schon Millionen von Jahren auf diesem Planeten pulsiert.\nDer Körper als Schlüssel zur eigenen Kraft\nWir werden üben\, diese wilde Intensität des Lebens\, unsere Urkraft\, in uns wieder voll und frei fließen zu lassen!\n\nDas Leben ist herausfordernd\, keine Frage. Wir erleben starke Gefühle\, sind mit vielen\, ständig wechselnden Aufgaben konfrontiert und spüren die Auswirkungen unserer kulturellen Konditionierung darin\, uns ständig im eigenen Leben falsch\, fremd\, nicht genug etc. zu fühlen und unsere ureigene Power immer wieder zu hinterfragen\, zurückzuhalten oder gar zu fürchten.\nViel zu oft fühlen wir uns ausgeliefert und überfordert\, ziehen uns lieber zurück und wälzen Leid und körperliches Unbehagen\, anstatt in den vehementen Vollkontakt zu gehen\, der uns als menschlichen Lebewesen eigentlich entspricht.\n\nDafür treten wir also an: \nWir wollen uns für Intensität und Kraft öffnen und sie erlauben lernen – unser Becken fühlen\, die Beine\, den Boden unter uns.\nWir wollen lernen\, dieser besonderen Kraft\, die von unten in uns strömt\, wieder zu vertrauen und sie in unserem Becken/Schoßraum ‘beheimaten’.\n\nKörperaufmerksamkeit und elementarer Kontakt zu unserer Mitwelt sind dafür die Schlüssel.\n\nWas Dich erwartet:\n\nEin Wochenende\, um ganz auf der Erde und im Körper zu landen – mit Schwitzhütte und Play Fight\, voller Naturverbindung\, authentischer Gemeinschaft und Magie\, voller Genuss und Tiefgang\, an einem wunderschönen Ort\, mit großartigem Essen!\n\nWir beginnen die gemeinsame Zeit mit einer Schwitzhütten-Zeremonie als sinnlich-elementare Naturerfahrung.\nDen Tag über bereiten wir den Platz dafür vor\, landen bewusst in unserem körperlichen Erleben und lernen uns kennen. Am frühen Abend tauchen wir ein in den samtig\, dunklen Schoß der Erde\, ​​lassen uns von glühenden Steinen bezaubern und von Wasser- und Kräuter-Dampf reinigen. Die Schwitzhütte ist ein sicherer\, geborgener Raum\, in dem Du Urkräfte erleben und tiefe Verbundenheit erfahren kannst – Grenzerfahrung passiert nur dann\, wenn Du sie suchst und wünschst.\n\nSamstag wollen wir miteinander spielerisch Raufen und Rangeln. Wir werden unsere Kraft im Kontakt mit anderen erforschen. Klare Regeln\, Spiele und Abläufe sorgen für Sicherheit und eine stimmige Dosis für jede Einzelne. Alle Säugetiere raufen miteinander – lasst uns gemeinsam diese besondere Form der Kommunikation und des Lernens über uns selbst und andere erforschen.\n\nAußerdem erwarten dich mehrere Bewegungs Sessions\, körpertherapeutisches Forschen\, schamanisch inspirierte Rituale und Raum für künstlerischen Selbstausdruck.\nUm die Mittagszeit planen wir Freizeit für Integration/Austausch/Ausruhen/ ein.\nWenn das Wetter es erlaubt\, wollen wir abends gerne am Lagerfeuer mit euch den Tag ausklingen lassen.\n\nFür wen und für wen eher nicht?\n\nFrauen jeden Alters und Hintergrundes\, die Lust haben auf:\n\n. Selbstvertrauen im Umgang mit herausfordernden Gefühlen\n\n. mehr Zuhause sein im eigenen Körper\n\n. der eigenen Kraft ohne Angst zu begegnen\n\n. ein intensives Gefühl von Eingewoben sein in die Welt und in Gemeinschaft\n\n. Du brauchst keine Vorerfahrung oder Fitness.\n\nWas wir von dir brauchen:\n\nGesunde Eigenverantwortung \nWir wollen in intensive Prozesse eintauchen und haben beide viel Erfahrung im Arbeiten mit Menschen und dem Öffnen von transformativen Räumen. Im Rahmen von Gruppenarbeit ist es allerdings wichtig\, dass du für dich und deine Bedürfnisse sorgen kannst und deine Grenzen achtest.\nOffenheit und Neugier\nAlle Inhalte an diesem Wochenende sind eine Einladung und selbstverständlich musst du gar nichts\, wenn es sich nicht passend anfühlt oder du situativ andere Bedürfnisse hast. Wir wünschen uns aber eine grundsätzliche Haltung von Offenheit und Neugier und ein Interesse an intensivem Eintauchen.\nSolltest du dazu Fragen haben\, melde dich gerne bei uns und wir besprechen\, ob das Retreat gerade zu dir passt.\n\nWer macht das:\n\nNadine Neuner – \nSie hat sich dem dem Erinnern und Erforschen von weiblicher Selbstermächtigung\, erdiger Mystik\, von wilder Lebendigkeit und (Natur-)Verbundenheit verschrieben – dem Zauber unserer Verkörperung\, unserem funkelnden Leuchten! Ganz authentisch und down to earth öffnet sie weiche\, klare Räume\, in denen dies für jede:n deutlich spür- und erfahrbar wird. Seit fast 20 Jahren ist sie auf der Reise – bietet 1:1-Begleitung\, Körperarbeit\, Frauenkreise\, Schüttel-Rituale\, Zeremonien und Retreats.\n\nKatharina Alf –\n\nKatharina begleitet Menschen einzeln und in Gruppen durch transformative Prozesse. Wie können wir alte\, limitierende Muster loslassen und neue Möglichkeiten erlauben? Wie können wir das uns innewohnende Potential entfalten? Diesen Fragen widmet sie sich als Körpertherapeutin und Coach für Körperaufmerksamkeit immer wieder neu.\nMehr zu Kathatina: https://katharinaalf.de\n\nStimmen der letzten Retreats:\n\n* Nadine und Katharina – danke\, dass ihr uns so gut gehalten habt in diesem offenen und weiten Kreis. Danke auch für euren Mut und für eure Arbeit\, die den Kristall des Frau-Sein mehr aufzeigen lässt. – Elisabeth\n\n* Dieses Wochenende mit euch hat mich auch noch mehr spüren und erleben lassen\, dass unser Körper so viel mehr Aufmerksamkeit für den Heilungsprozess verdient.\nVor dem Wochenende hatte ich Angst und Zweifel\, ob es was für mich ist\, ob ich in diesen Raum gehen will. Jetzt weiß ich\, dass ich niergends lieber gewesen bin als dort mit euch\, in diesem Kreis und an diesem friedvollen\, bunten\, erdenden Ort. – Anne\n\n* In der Woche nach dem Retreat war eine Wildheit in mir\, da wusste ich manchmal gar nicht wohin mit mir und meiner Energie. Beim Medicine Walk konnte ich mich tief mit mir verbinden und irgendetwas lösen. Gefühlt habe ich eine halbe Stunde geweint aus einem Schmerz und gleichzeitig aus der Schönheit des Seins heraus. Dabei habe ich ein tiefes Vertrauen gefunden. Ich bin mir dankbar\, dass ich mich auf die Suche danach gemacht habe. Und euch danke ich herzlich für den geschützten und wertschätzenden Raum\, den ihr eröffnet und für uns gehalten habt. Regula\n\nWo?\n\nNaturcamp Ragösen/Fläming\n\nDas Camp ist ein wunderschöner Ort in der Nähe von Bad Belzig\, umgeben von Wäldern und einem kleinen Mühlbach\, der direkt am Platz vorbeifließt.\nAm Ort: Küche\, Outdoor-Campingduschen und Indoor-Bad\, Komposttoiletten\n\nWann?\n\nAnreise: \nFreitag\, 13.9.2024 ab 10 Uhr kannst du ankommen (Zelt aufbauen\, Umgebung erkunden…)\, wir starten gemeinsam um 11 Uhr\nAbreise:\nSonntag\, 15.9. nach dem Mittagessen\n\nBeitrag:\n\nSeminargebühr:\nEarly Bird bis 1. August:\n270\,-€ – bring a sister: 480\,-€\nregulär:\n320\,-€ – bring a sister: 580\,-€\n\nzzgl. Beitrag für den Platz und leckerste bio-vegan-vegetarische Verpflegung:\n\nVerpflegung: 120\,-€\neigenes Zelt oder Schlafplatz in der Jurte: 135\,-€\n\nVorab bekommst du von uns eine Email mit weiteren Details und einer Packliste.\n\nDu hast total Lust und wärst gerne dabei\, aber das Geld ist knapp?\nDas verstehen wir! Nach Absprache kannst du gerne in Raten zahlen.\n\nAußerdem haben wir noch ein Helferinnen-Ticket zu 50%-vergünstigtem Seminar-Preis (Platz und Verpflegung sind extra) zu vergeben – sprich uns darauf an!\n\nSEI DABEI – Anmeldung Einzel- und Sistertickets:\nhttps://app.acuityscheduling.com/schedule/c0163732/?categories%5B%5D=WILDSourcing%20ERDE
+URL:https://havelland-verteiler.de/event/raw-magic-erdung-und-urkraft-ein-retreat-fuer-frauen/
+LOCATION:NaturCamp Ragösen/Fläming\, Bad Belzig\, 14806
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/RAW-magic-Grounding-Retreat-Header.jpg
+ORGANIZER;CN="Nadine Neuner - Therapie und Frauenarbeit":MAILTO:nadine@wildwiseflow.com
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240915T100000
+DTEND;TZID=Europe/Berlin:20240915T170000
+DTSTAMP:20240821T094901
+CREATED:20240806T115512Z
+LAST-MODIFIED:20240806T115513Z
+UID:10001524-1726394400-1726419600@havelland-verteiler.de
+SUMMARY:Hautgeflüster/ Jahresgruppe
+DESCRIPTION:Weiterbildung zur/m Gezeitenkundigen\n\nWo stehst du? Wo kommst du her? Wo willst du hin?\n\nEin Gezeitenkundiger versteht es\, alle Zeiten durch eine gute Erzählung zu verbinden. Durch eine Erzählung\, die Mut macht. Durch eine Erzählung\, die Sinn stiftet. Welche Erinnerungen stecken in deiner Haut? Welche Visionen für ein Morgen?\n\nBasieren auf den Ideen der Narrativen Therapie wirst du mittels Massage\, Tanz\, Clownerie\, Aufstellungsarbeit und Schreiben\, immer wieder Schreiben eine neue Erzählung für dich\, deine Liebsten und diesen Erdball finden.\n\nIch freue mich\, wenn du dabei sein magst. Bitte nimm´ vorher Kontakt auf\, damit wir schauen\, ob es für dich passt!\n\nZeiten: Jeden 3. Sonntag im Monat von 10-17 Uhr (9 mal)\n\n15.9./ 20.10./ 17.11./ 15.12.2024/ 19.1./ 16.2./ 16.3./ 13.4./ 18.5.2025\n\nKosten: Euro 1.080\,- bis 11.8.\, danach Euro 1.200.- oder 9x Euro 150\,-\n\nLeitung: Dr. phil. Dorothée Jansen\, Tanztherapeutin\, Narrative Therapeutin\, Schriftstellerin\n\nTel. 0163-2844883\n\n 
+URL:https://havelland-verteiler.de/event/hautgefluester-jahresgruppe/
+LOCATION:Praxis StimmBar\, Heinrich-von-Kleist-Straße 1b\, Potsdam-Babelsberg\, 14482
+ORGANIZER;CN="Dorothee Jansen":MAILTO:dorotheejansen@gmx.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240919T123000
+DTEND;TZID=Europe/Berlin:20240919T173000
+DTSTAMP:20240821T094901
+CREATED:20240802T142023Z
+LAST-MODIFIED:20240802T142023Z
+UID:10001523-1726749000-1726767000@havelland-verteiler.de
+SUMMARY:Werkstattgespräch Synergien für eine weltoffene und nachhaltige Entwicklung
+DESCRIPTION:Bildung für nachhaltige Entwicklung (BNE) ist zentral für die Erreichung der UN Agenda 2030 mit ihren 17 Nachhaltigkeitszielen. Die Agenda 2030 schafft die Grundlage dafür\, weltweiten wirtschaftlichen Fortschritt im Einklang mit sozialer Gerechtigkeit und im Rahmen der ökologischen Grenzen der Erde zu gestalten. Auch die Brandenburger Landesnachhaltigkeitsstrategie orientiert sich an der Agenda 2030 und den Nachhaltigkeitszielen. Dabei ist die Einbindung lokaler Akteur*Innen für eine Verwirklichung von Nachhaltigkeit und das Erreichen der Nachhaltigkeitsziele von entscheidender Bedeutung.\n\nVor diesem Hintergrund laden das Naturschutzzentrum Krugpark\, die Servicestelle BNE und Engagement Global herzlich zu einem regionalen Werkstattgespräch für Brandenburg an der Havel und die Regionen Potsdam-Mittelmark und Havelland ein.\n\nDas Werkstattgespräch verfolgt das Ziel\, unter dem Schirm der Agenda 2030 lokale und regionale Akteursgruppen stärker miteinander in den Austausch zu bringen und zu vernetzen. Damit wollen wir zum Aufbau von lokalen Bildungslandschaften und einer Bildungsszene beitragen\, die sich gegenseitig inspiriert und gemeinsam weiterentwickelt\, um die Ziele und Inhalte der Agenda in der Fläche zu verbreiten. Wir wollen damit Synergien für eine weltoffene und nachhaltige Entwicklung schaffen.\n\nAnmeldung: https://www.engagement-global.de/de/online-registrierung-crm/9939–regionales-werkstattgespraech-in-brandenburg-ad-havel\n\n\n\n\n\n\nDie Veranstaltung wird von Engagement Global in Kooperation mit der Servicestelle BNE und dem Naturschutzzentrum Krugpark\, Brandenburg an der Havel durchgeführt.\n\n\n\n\n\n\nNaturschutzzentrum Krugpark\, Wilhelmsdorf 6\, 14776 Brandenburg an der Havel\n\nKontakt: Außenstelle Berlin Engagement Global\n+49 30 25482 3430\naussenstelle.berlin@engagement-global.de
+URL:https://havelland-verteiler.de/event/werkstattgespraech-synergien-fuer-eine-weltoffene-und-nachhaltige-entwicklung/
+LOCATION:Krugpark Brandenburg an der Havel\, Ziesarer Landstraße\, Brandenburg\, 14776
+ORGANIZER;CN="Engagement Global":MAILTO:aussenstelle.berlin@engagement-global.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240922T140000
+DTEND;TZID=Europe/Berlin:20240922T170000
+DTSTAMP:20240821T094901
+CREATED:20240527T131300Z
+LAST-MODIFIED:20240527T131301Z
+UID:10000965-1727013600-1727024400@havelland-verteiler.de
+SUMMARY:Konzert Levin Strehlow
+DESCRIPTION:Levin Strehlow hat die besondere Fähigkeit alltägliche Dinge lyrisch zu verpacken und mit passender Musik zu untermalen. Mal laut\, mal schnell – doch vornehmlich ruhig und entspannt. Dabei lassen seine Texte nicht die nötige Portion Tiefe vermissen und bringen einen immer wieder zum nachdenken und schmunzeln. Live ist der junge Musiker aus Rostock trotz seiner schüchternen Art nicht auf den Mund gefallen und überrascht zwischen den Songs mit seinem trockenen Humor.\n\nDer Eintritt erfolgt im Tausch gegen einen Beitrag für das Offene Büfett. Du kannst eine Kleinigkeit aus deinem Garten\, etwas Selbstgemachtes oder auch eine Packung Kekse mitbringen.\n\nDer Garten ist an diesem Tag von 10 bis 18 Uhr offen.
+URL:https://havelland-verteiler.de/event/konzert-levin-strehlow/
+LOCATION:Landschafts- und Kunstverein Rietzer Berg\, Rietzer Siedlung 11\, Kloster Lehnin\, OT Rietz\, 14797
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Landschafts- und Kunstverein Rietzer Berg":MAILTO:info@rietzerberg.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240922T170000
+DTEND;TZID=Europe/Berlin:20240927T140000
+DTSTAMP:20240821T094901
+CREATED:20240607T134326Z
+LAST-MODIFIED:20240607T134327Z
+UID:10001117-1727024400-1727445600@havelland-verteiler.de
+SUMMARY:Antje Rávik Strubel in Brandenburg
+DESCRIPTION:In diesem Literatur-Seminar wird es eine lese- und austauschfreudige Woche lang um das Werk der 1974 in Potsdam geborenen und dort lebenden Autorin Antje Rávik Strubel gehen\, eine der wichtigsten deutschen Gegenwartautorinnen. Ergänzt wird die Zeit durch Exkursionen nach Brandenburg und in die Region.
+URL:https://havelland-verteiler.de/event/antje-ravik-strubel-in-brandenburg/
+LOCATION:Villa Fohrde e.V. Havelsee OT Fohrde\, August-Bebel-Straße 42\, Havelsee OT Fohrde\, 14798
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Villa Fohrde e.V.":MAILTO:info@villa-fohrde.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240928T140000
+DTEND;TZID=Europe/Berlin:20240928T190000
+DTSTAMP:20240821T094901
+CREATED:20240718T084949Z
+LAST-MODIFIED:20240718T084949Z
+UID:10001519-1727532000-1727550000@havelland-verteiler.de
+SUMMARY:WusterMARKT - der Markt für Gutes aus der Region
+DESCRIPTION:Der WusterMARKT – der Markt für Gutes aus der Region – lädt unter dem Motto „regional & fair für alle“ zu einem bunten und vielfältigen Erntefest!\n\nDeckt euch mit leckeren\, nachhaltig produzierte Lebensmitteln direkt von den Erzeuger:innen aus der Region ein: Von Obst und Gemüse über Walnüsse\, Eier und frische Nudeln zu Nuss-Aufstrichen\, Marmeladen und Honigprodukten! Entdeckt dazu vielerlei lokale Kunsthandwerker:innen\, die das Angebot mit Kreativem aus Stoff\, Wolle\, Holz\, Papier\, Ton und vielem mehr ergänzen.\n\nFür eurer leibliches Wohl vor Ort haben wir nicht nur Kaffee & Kuchen organisiert\, sondern auch Bio-Würstchen vom Grill\, vegane Haferburger\, Wasserbüffel-Gulasch und mehr. Genießt die entspannte Atmosphäre des malerischen Pfarrhofs und entspannt bei Live-Musik und einem Kaltgetränk. Für Kinder haben wir Fahr- und Rollgeräte\, eine Bastelecke und ein Lesezelt mit fairen und vielfältigen Kinderbüchern.\n\nBringt eure Fahrräder mit\, eine mobile Fahrradwerkstatt ist vor Ort!
+URL:https://havelland-verteiler.de/event/wustermarkt-der-markt-fuer-gutes-aus-der-region/
+LOCATION:Pfarrhof Wustermark\, Friedrich-Rumpf-Str. 11\, Wustermark\, 14641
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/png:https://havelland-verteiler.de/wp-content/uploads/2024/07/wusterMARKT4_save-the-date_comp.png
+ORGANIZER;CN="Wusterwerk":MAILTO:chrissi@wusterwerk.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240928T140000
+DTEND;TZID=Europe/Berlin:20250329T180000
+DTSTAMP:20240821T094901
+CREATED:20240705T123236Z
+LAST-MODIFIED:20240705T123236Z
+UID:10001130-1727532000-1743271200@havelland-verteiler.de
+SUMMARY:Workshop Reihe "Perimenopause - Wandlung und Weg"
+DESCRIPTION:Eine 4-teilige Workshop-Reihe\n\nMit dieser Workshop-Reihe nimmst du dir über mehrere Monate bewusst Zeit für deine eigene Reise in der Perimenopause
+URL:https://havelland-verteiler.de/event/workshop-reihe-perimenopause-wandlung-und-weg/
+LOCATION:TANZWERK Werder\, Eisenbahnstr. 114\, Werder\, 14542
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/aufbruch.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20240929T140000
+DTEND;TZID=Europe/Berlin:20240929T180000
+DTSTAMP:20240821T094901
+CREATED:20240527T131255Z
+LAST-MODIFIED:20240527T131256Z
+UID:10000966-1727618400-1727632800@havelland-verteiler.de
+SUMMARY:Workshop Wurmkistenbau
+DESCRIPTION:Du wohnst in einer Wohnung und hast keinen Platz für einen Kompost? Dann bau dir deine eigene Wurmkiste und produziere Humus auf dem Balkon oder in der Wohnung.\n\nUnter fachkundiger Anleitung von Sven Elsner von der Firma Havelwurm Wurmkultur erfährst du erst theoretisch\, wie Wurmkisten und die Humusproduktion mit Kompostwürmern funktionieren und dann kannst du deine eigene Wurmkiste aus Holz bauen\, die du am Ende mit nach Hause nehmen kannst.\n\nAuf Wunsch kannst du direkt 500 Kompostwürmer für ca. 20€ kaufen\, um sofort mit der eigenen Humusproduktion loszulegen.
+URL:https://havelland-verteiler.de/event/workshop-wurmkistenbau/
+LOCATION:Landschafts- und Kunstverein Rietzer Berg\, Rietzer Siedlung 11\, Kloster Lehnin\, OT Rietz\, 14797
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Landschafts- und Kunstverein Rietzer Berg":MAILTO:info@rietzerberg.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20241004T160000
+DTEND;TZID=Europe/Berlin:20241006T120000
+DTSTAMP:20240821T094901
+CREATED:20240705T123256Z
+LAST-MODIFIED:20240705T123257Z
+UID:10001129-1728057600-1728216000@havelland-verteiler.de
+SUMMARY:Frauen Yoga & Soul Retreat "Lebendig Verbunden Sein"
+DESCRIPTION:Eine herzliche Einladung zu unserem Oktober-Retreat im wunderschönen Haus Birnbaum.\nTauche mit uns zusammen ein in unser Thema “Lebendig Verbunden Sein”.\n\nDich erwarten:\n\nYin Yoga\nEmbodied Yin\nSomatic Ecstatic Dance\nMeditation\nTiefe Naturerfahrung\nStille\nAustausch\n\nUnd viel Raum für dich\n\nEs gibt noch ein letztes Einzelzimmer oder Platz im Doppelzimmer.
+URL:https://havelland-verteiler.de/event/frauen-yoga-soul-retreat-lebendig-verbunden-sein/
+ATTACH;FMTTYPE=image/jpeg:https://havelland-verteiler.de/wp-content/uploads/2024/07/james-pritchett-vVdfzPWBOUI-unsplash.jpg
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20241005T110000
+DTEND;TZID=Europe/Berlin:20241006T190000
+DTSTAMP:20240821T094901
+CREATED:20240717T092714Z
+LAST-MODIFIED:20240717T092715Z
+UID:10001140-1728126000-1728241200@havelland-verteiler.de
+SUMMARY:FestEssen – das Festival für regionalen\, fairen und klimafreundlichen Genuss
+DESCRIPTION:Mit einem ganzen Festival begeistern wir Euch für regionale Landwirtschaft\, nachhaltige und klimafreundliche Lebensmittel und fairen Handel! Vom 5.-6. Oktober 2024 laden wir auf den Marktplatz in Werder/Havel zu leckerem Brandenburger Streetfood\, einem regionalen Erzeugermarkt\, Werkstätten zum Mitmachen und Livemusik ein.\n\nDas FestEssen macht die Ernährungswende für alle erlebbar und demonstriert\, was die Region dazu beitragen kann. Mit dem Schwerpunktthema „Ackern für die Zukunft“ wollen wir jungen Menschen und Quereinsteigern Lust auf Lebensmittelhandwerk und Landwirtschaft machen.\n\nKauft leckere Lebensmittel direkt von Erzeuger:innen: Deckt Euch mit Obst\, Gemüse\, Walnüssen\, Pilzen oder Chutneys\, Honig und Pralinen ein.\n\nGenießt Brandenburger Streetfood: Ein vielseitiges Angebot mit veganem Gyros\, Hirschbratwurst\, Wasserbüffel-Burgern\, Flammkuchen\, Nudeln und Getränken sorgt für Euer Wohl.\n\nBesucht eine unserer Mitmachwerkstätten: Macht Eure eigene Schokolade\, Brot\, Käse\, Apfelsaft oder Falafel.\n\nBühne frei – für unser Essen: Entspannt Euch bei regionalen Bands\, Kleinkunst\, ernährungspolitischen Talks und einer internationalen Koch-Show!
+URL:https://havelland-verteiler.de/event/festessen-das-festival-fuer-regionalen-fairen-und-klimafreundlichen-genuss/
+LOCATION:Marktplatz Werder\, auf der Insel\, Werder (Havel)
+CATEGORIES:Veranstaltung
+ATTACH;FMTTYPE=image/png:https://havelland-verteiler.de/wp-content/uploads/2024/07/FB-Titel.png
+ORGANIZER;CN="Ern&auml%3Bhrungsrat Havelland":MAILTO:havelland@ernaehrungsrat-brandenburg.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20241010T140000
+DTEND;TZID=Europe/Berlin:20241010T160000
+DTSTAMP:20240821T094901
+CREATED:20240527T131250Z
+LAST-MODIFIED:20240527T131250Z
+UID:10000967-1728568800-1728576000@havelland-verteiler.de
+SUMMARY:Workshop Saatgut sammeln und tauschen
+DESCRIPTION:Zum Ende der Saison bereiten wir die Grundlage für die Nächste\, nämlich mit eigenem Saatgut – die Basis für unsere Ernährung.\n\nUm diese in die eigenen Hände nehmen zu können und den Kreislauf des Wachstums der Pflanze zu schließen\, zeigen wir euch\, wie ihr Saatgut von unterschiedlichen Pflanzen nehmen könnt\, wie ihr es gut lagert und was der Unterschied zwischen Hybridsamen und samenfestem Saatgut ist.\n\nDer Workshop wird von unserer Gärtnerin Carolin Kott geleitet.
+URL:https://havelland-verteiler.de/event/workshop-saatgut-sammeln-und-tauschen/
+LOCATION:Landschafts- und Kunstverein Rietzer Berg\, Rietzer Siedlung 11\, Kloster Lehnin\, OT Rietz\, 14797
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Landschafts- und Kunstverein Rietzer Berg":MAILTO:info@rietzerberg.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20241013T110000
+DTEND;TZID=Europe/Berlin:20241013T160000
+DTSTAMP:20240821T094901
+CREATED:20240527T131245Z
+LAST-MODIFIED:20240527T131245Z
+UID:10000968-1728817200-1728835200@havelland-verteiler.de
+SUMMARY:Tag des Bodens
+DESCRIPTION:Die Erde. Der Same entsprießt in ihr und das Tote kehrt in sie zurück. Ursprung und Ende. Meisterin des Umwandelns von Abfall in Energie. Heute treten wir unsere Erde oft mit Füßen – zehren sie aus\, verdichten sie mit schweren Maschinen oder versiegeln sie komplett. Dabei ist sie die Grundlage allen Seins.\nIn diesem Workshop werden wir uns theoretisch und praktisch mit ihr zu beschäftigen. Ein Zeitraum für Bodenkontakt.\n\nWir schauen uns gemeinsam die Böden an\, nehmen eine Spatenprobe und vergleichen die Bodenaktivität an verschiedenen Standorten. Gerne könnt ihr auch eine Tüte von eurem eigenen Gartenboden mitbringen (zwei Hände voll – gemischt aus den obersten 20 cm). Diese Proben können wir dann mit Methoden der Feldbodenkunde auf die Textur und den Humusgehalt untersuchen sowie untereinander vergleichen. Neben dem praktischen Tun wird es Raum für Austausch und Fragen\, die Euch bewegen\, geben.\n\nDer Workshop wird geleitet von Carlotta Gabriel. Sie hat Umweltnaturwissenschaften studiert und eine Lehre in der biodynamischen Landwirtschaft gemacht\, um sich noch intensiver mit dem Boden zu beschäftigen.
+URL:https://havelland-verteiler.de/event/tag-des-bodens/
+LOCATION:Landschafts- und Kunstverein Rietzer Berg\, Rietzer Siedlung 11\, Kloster Lehnin\, OT Rietz\, 14797
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Landschafts- und Kunstverein Rietzer Berg":MAILTO:info@rietzerberg.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Berlin:20241027T140000
+DTEND;TZID=Europe/Berlin:20241027T180000
+DTSTAMP:20240821T094901
+CREATED:20240527T130911Z
+LAST-MODIFIED:20240527T130911Z
+UID:10000969-1730037600-1730052000@havelland-verteiler.de
+SUMMARY:Schwitzen in der Hobbithöhle und Lesung
+DESCRIPTION:Fühl dich wie ein Hobbit in der Dampfsauna unserer Hobbithöhle!\n\nDie richtige Einstimmung ins Hobbitleben gibt es um 14 Uhr bei der Lesung des Buches „Der kleine Hobbit” von J.R. Tolkien durch den Schauspieler Ilja Hübner.\n\nDanach geht’s ab in die Hobbithöhle\, die als Dampfsauna eine Temperatur von bis zu 60°C erreichen kann. Zwischen den Dampfsaunagängen gibt’s heiße Getränke am Lagerfeuer.
+URL:https://havelland-verteiler.de/event/schwitzen-in-der-hobbithoehle-und-lesung/
+LOCATION:Landschafts- und Kunstverein Rietzer Berg\, Rietzer Siedlung 11\, Kloster Lehnin\, OT Rietz\, 14797
+CATEGORIES:Veranstaltung
+ORGANIZER;CN="Landschafts- und Kunstverein Rietzer Berg":MAILTO:info@rietzerberg.de
+END:VEVENT
+END:VCALENDAR
