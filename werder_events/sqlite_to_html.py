@@ -42,6 +42,7 @@ def get_events_from_db(db_path):
 def generate_html(events):
     events_json = json.dumps(events)
     page_title = "Aktuelle Termine in Werder (Havel)"
+    page_url = "https://arne-cl.github.io/werder-events/"
 
     # Prepare preview information for the first three events
     preview_events = events[:3]
@@ -57,7 +58,7 @@ def generate_html(events):
     <meta property="og:title" content="{page_title}">
     <meta property="og:description" content="Aktuelle Termine in Werder (Havel):\n{preview_text}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-website-url.com">
+    <meta property="og:url" content="{page_url}">
     <style>
         table {{
             border-collapse: collapse;
