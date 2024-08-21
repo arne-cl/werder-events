@@ -57,7 +57,7 @@ def generate_html(events):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{page_title}</title>
     <meta property="og:title" content="{page_title}">
-    <meta property="og:description" content="Aktuelle Termine in Werder (Havel):\n{preview_text}">
+    <meta property="og:description" content="{preview_text}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{page_url}">
     <style>
