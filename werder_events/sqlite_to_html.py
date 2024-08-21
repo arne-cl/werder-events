@@ -47,9 +47,9 @@ def generate_html(events):
 
     # Prepare preview information for the first three events
     preview_events = events[:3]
-    preview_text = "\n".join([f"{html.escape(event['summary'])} - {event['start']} - {html.escape(event['location'] or '')}" for event in preview_events])
+    preview_text = "\n".join([f"{event['start']} {html.escape(event['summary'])}, {html.escape(event['location'] or '')}" for event in preview_events])
 
-    html = f"""
+    html_str = f"""
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -167,7 +167,7 @@ def generate_html(events):
 </body>
 </html>
     """
-    return html
+    return html_str
 
 def main():
     parser = argparse.ArgumentParser(description="Generate an HTML event viewer from an SQLite database.")
