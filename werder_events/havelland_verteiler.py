@@ -8,6 +8,9 @@ import argparse
 import hashlib
 import re
 
+from werder_events.utils import create_database
+
+
 def get_domain(url):
     parsed_url = urlparse(url)
     return parsed_url.netloc
@@ -75,24 +78,6 @@ def parse_ical(source, location_pattern=None, event_type_pattern=None):
     
     return events
 
-def create_database(db_path):
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS events (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        summary TEXT,
-        start_date TEXT,
-        end_date TEXT,
-        location TEXT,
-        description TEXT,
-        event_type TEXT,
-        source TEXT,
-        event_hash TEXT UNIQUE
-    )
-    ''')
-    conn.commit()
-    return conn
 
 def insert_events(conn, events):
     cursor = conn.cursor()
@@ -100,8 +85,8 @@ def insert_events(conn, events):
     for event in events:
         cursor.execute('''
         INSERT OR IGNORE INTO events 
-        (summary, start_date, end_date, location, description, event_type, source, event_hash)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        (summary, start_date, end_date, location, description, event_type, source, event_hash, is_reviewed, is_visible)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             event['summary'],
             event['start'],
@@ -110,7 +95,9 @@ def insert_events(conn, events):
             event['description'],
             event['type'],
             event['source'],
-            event['event_hash']
+            event['event_hash'],
+            False,
+            False
         ))
         if cursor.rowcount > 0:
             inserted_count += 1

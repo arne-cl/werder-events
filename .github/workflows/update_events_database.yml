@@ -1,0 +1,85 @@
+name: Update Events Database and Generate HTML
+
+on:
+  schedule:
+    - cron: '17 2 * * *'  # Runs at 02:17 UTC every day
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-sqlite-database:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+
+    - name: Scrape havelland-verteiler.de ical to sqlite
+      run: |
+        python werder_events/havelland_verteiler.py --event-type-include "Single Day" "webcal://havelland-verteiler.de/?post_type=tribe_events&ical=1&eventDisplay=list" events.sqlite
+
+    - name: Scrape werder-havel.de events to sqlite
+      run: |
+        python werder_events/werder_havel_de.py https://www.werder-havel.de/tourismus/veranstaltungen/veranstaltungskalender.html events.sqlite -v
+
+    - name: Scrape stadtmagazin-events.de events to sqlite
+      run: |
+        python werder_events/stadtmagazin_events_de.py "https://www.stadtmagazin-events.de/api/search/event/alle-veranstaltungen/get_search_results?search_value=Werder&categories=&search_date=&search_date_end=&page=1" events.sqlite -v
+
+    - name: Generate HTML from SQLite
+      run: |
+        python werder_events/sqlite_to_html.py events.sqlite -o index.html
+
+    - name: Create _site directory and move index.html
+      run: |
+        mkdir -p _site
+        mv index.html _site/
+
+    - name: Commit and push if changes
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add events.sqlite _site/index.html
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update events database and HTML"
+          git push
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Check for push errors
+      if: failure()
+      run: |
+        echo "Error occurred during push. Here's some debug information:"
+        git status
+        git remote -v
+        echo "GitHub Actor: ${{ github.actor }}"
+        echo "GitHub Ref: ${{ github.ref }}"
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: '_site'  # Point to the directory containing index.html
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
