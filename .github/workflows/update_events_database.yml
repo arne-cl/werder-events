@@ -40,11 +40,16 @@ jobs:
       run: |
         python werder_events/sqlite_to_html.py events.sqlite -o index.html
 
+    - name: Create _site directory and move index.html
+      run: |
+        mkdir _site
+        mv index.html _site/
+
     - name: Commit and push if changes
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add events.sqlite index.html
+        git add events.sqlite _site/index.html
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
@@ -69,7 +74,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: 'index.html'
+        path: '_site'  # Point to the directory containing index.html
 
     - name: Deploy to GitHub Pages
       id: deployment
