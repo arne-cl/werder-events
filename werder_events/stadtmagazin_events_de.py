@@ -3,12 +3,19 @@ import sqlite3
 from datetime import datetime, date
 import hashlib
 import logging
+import requests
 from werder_events.utils import create_database, setup_logger
 
-def parse_events(input_file, logger):
-    logger.info(f"Parsing events from {input_file}")
-    with open(input_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+def parse_events(input_source, logger):
+    logger.info(f"Parsing events from {input_source}")
+    if input_source.startswith(('http://', 'https://')):
+        logger.debug("Fetching data from URL")
+        response = requests.get(input_source)
+        data = response.json()
+    else:
+        logger.debug("Reading data from local file")
+        with open(input_source, 'r', encoding='utf-8') as f:
+            data = json.load(f)
     
     events = []
     for result in data['results']:
@@ -61,12 +68,12 @@ def insert_event(conn, event, logger):
     logger.debug(f"Event {'inserted' if inserted else 'already exists'}: {event['title']}")
     return inserted
 
-def main(input_file, output_db, verbose):
+def main(input_source, output_db, verbose):
     logger = setup_logger("stadtmagazin-events.de scraper", verbose)
     conn = None
     try:
         logger.info("Starting event extraction and database insertion")
-        events = parse_events(input_file, logger)
+        events = parse_events(input_source, logger)
         
         conn = create_database(output_db, logger)
         
@@ -81,12 +88,14 @@ def main(input_file, output_db, verbose):
         cursor.execute('SELECT COUNT(*) FROM events WHERE source = ?', ('stadtmagazin-events.de',))
         source_events = cursor.fetchone()[0]
         
-        logger.info(f"Events from {input_file} have been successfully imported into {output_db}")
+        logger.info(f"Events from {input_source} have been successfully imported into {output_db}")
         logger.info(f"Total events in database: {total_events}")
         logger.info(f"Total events from this source: {source_events}")
         logger.info(f"New events added in this run: {inserted_count}")
     except json.JSONDecodeError as e:
-        logger.error(f"Error parsing JSON file: {e}")
+        logger.error(f"Error parsing JSON data: {e}")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error fetching data from URL: {e}")
     except sqlite3.Error as e:
         logger.error(f"SQLite error: {e}")
     except Exception as e:
@@ -99,7 +108,7 @@ def main(input_file, output_db, verbose):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='Extract events from stadtmagazin-events.de and add to SQLite database.')
-    parser.add_argument('input', help='Input JSON file')
+    parser.add_argument('input', help='Input JSON file or URL')
     parser.add_argument('output', help='Output SQLite database file')
     parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
     args = parser.parse_args()
