@@ -42,7 +42,7 @@ jobs:
 
     - name: Create _site directory and move index.html
       run: |
-        mkdir _site
+        mkdir -p _site
         mv index.html _site/
 
     - name: Commit and push if changes
