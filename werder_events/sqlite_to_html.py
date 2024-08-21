@@ -43,13 +43,21 @@ def generate_html(events):
     events_json = json.dumps(events)
     page_title = "Aktuelle Termine in Werder (Havel)"
 
+    # Prepare preview information for the first three events
+    preview_events = events[:3]
+    preview_text = "\n".join([f"{event['summary']} - {event['start']} - {event['location']}" for event in preview_events])
+
     html = f"""
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{page_title}</title>
+    <meta property="og:title" content="{page_title}">
+    <meta property="og:description" content="Aktuelle Termine in Werder (Havel):\n{preview_text}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com">
     <style>
         table {{
             border-collapse: collapse;
