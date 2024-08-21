@@ -36,6 +36,10 @@ jobs:
       run: |
         python werder_events/werder_havel_de.py https://www.werder-havel.de/tourismus/veranstaltungen/veranstaltungskalender.html events.sqlite -v
 
+    - name: Scrape stadtmagazin-events.de events to sqlite
+      run: |
+        python werder_events/stadtmagazin_events_de.py "https://www.stadtmagazin-events.de/api/search/event/alle-veranstaltungen/get_search_results?search_value=Werder&categories=&search_date=&search_date_end=&page=1" events.sqlite -v
+
     - name: Generate HTML from SQLite
       run: |
         python werder_events/sqlite_to_html.py events.sqlite -o index.html
