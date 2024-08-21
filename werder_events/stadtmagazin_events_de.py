@@ -22,7 +22,13 @@ def parse_events(input_source, logger):
         event = {}
         event['title'] = result['title']
         event['link'] = f"https://www.stadtmagazin-events.de{result['html'].split('href=\"')[1].split('"')[0]}"
-        event['location'] = result['html'].split('<a href="')[1].split('">')[1].split('</a>')[0]
+        
+        location_html = result['html'].split('<div class="event_info">')[1].split('</div>')[0]
+        location_parts = location_html.split('<a href="')
+        if len(location_parts) > 1:
+            event['location'] = location_parts[1].split('">')[1].split('</a>')[0]
+        else:
+            event['location'] = "Unknown"
         
         date_time = result['html'].split('<p class="event_date">')[1].split('</p>')[0].split(' ')
         event['date'] = date_time[0]
