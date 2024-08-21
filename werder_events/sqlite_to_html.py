@@ -29,8 +29,8 @@ def get_events_from_db(db_path):
                     "start": row[1],
                     "end": row[2],
                     "location": row[3],
-                    "description": row[4],
-                    "type": row[5],
+                    #"description": row[4], # TODO: Are event descriptions copyrighted?
+                    #"type": row[5],
                     "source": row[6]
                 })
         except ValueError:
@@ -106,14 +106,6 @@ def generate_html(events):
                     <input type="text" class="filter-input" data-column="location" placeholder="Filter location...">
                 </th>
                 <th>
-                    Description
-                    <input type="text" class="filter-input" data-column="description" placeholder="Filter description...">
-                </th>
-                <th>
-                    Type
-                    <input type="text" class="filter-input" data-column="type" placeholder="Filter type...">
-                </th>
-                <th>
                     Source
                     <input type="text" class="filter-input" data-column="source" placeholder="Filter source...">
                 </th>
@@ -136,8 +128,6 @@ def generate_html(events):
                     <td>${{event.start}}</td>
                     <td>${{event.end}}</td>
                     <td>${{event.location || ''}}</td>
-                    <td>${{event.description || ''}}</td>
-                    <td>${{event.type}}</td>
                     <td>${{event.source}}</td>
                 `;
                 eventBody.appendChild(row);
