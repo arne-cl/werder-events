@@ -1,4 +1,4 @@
-name: Update Events Database
+name: Update Events Database and Generate HTML
 
 on:
   schedule:
@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update-sqlite-database:
@@ -34,15 +36,19 @@ jobs:
       run: |
         python werder_events/werder_havel_de.py https://www.werder-havel.de/tourismus/veranstaltungen/veranstaltungskalender.html events.sqlite -v
 
+    - name: Generate HTML from SQLite
+      run: |
+        python werder_events/sqlite_to_html.py events.sqlite -o index.html
+
     - name: Commit and push if changes
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add events.sqlite
+        git add events.sqlite index.html
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "Update events database"
+          git commit -m "Update events database and HTML"
           git push
         fi
       env:
@@ -56,3 +62,15 @@ jobs:
         git remote -v
         echo "GitHub Actor: ${{ github.actor }}"
         echo "GitHub Ref: ${{ github.ref }}"
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: 'index.html'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
