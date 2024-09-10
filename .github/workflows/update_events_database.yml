@@ -38,7 +38,7 @@ jobs:
 
     - name: Scrape stadtmagazin-events.de events to sqlite
       run: |
-        python werder_events/stadtmagazin_events_de.py "https://www.stadtmagazin-events.de/api/search/event/alle-veranstaltungen/get_search_results?search_value=Werder&categories=&search_date=&search_date_end=&page=1" events.sqlite -v
+        python stadtmagazin-events/stadtmagazin-events-to-sqlite.py "https://www.stadtmagazin-events.de/api/search/event/alle-veranstaltungen/get_search_results?search_value=Werder&categories=&search_date=&search_date_end=&page=1" events.sqlite
 
     - name: Generate HTML from SQLite
       run: |

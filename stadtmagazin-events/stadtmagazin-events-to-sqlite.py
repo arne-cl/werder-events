@@ -81,9 +81,8 @@ def insert_events(conn, events):
     conn.commit()
     return inserted_count
 
-def main(output_db):
-    try:
-        url = "https://www.stadtmagazin-events.de/api/search/event/alle-veranstaltungen/get_search_results?search_value=Werder&categories=&search_date=&search_date_end=&page=1"
+def main(url, output_db):
+    try:        
         raw_events = fetch_events(url)
         events = [parse_event(event) for event in raw_events]
         
@@ -112,7 +111,8 @@ def main(output_db):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Extract events from stadtmagazin-events.de and store in SQLite database.')
+    parser.add_argument('url', help='Input URL')
     parser.add_argument('output', help='Output SQLite database file')
     args = parser.parse_args()
 
-    main(args.output)
+    main(args.url, args.output)
